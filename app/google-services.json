@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "397375197829",
+    "project_id": "mobilediagonisticapp",
+    "storage_bucket": "mobilediagonisticapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397375197829:android:933d391a93b208da44cfec",
+        "android_client_info": {
+          "package_name": "com.example.mobilediagoniisticapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_7m0BopQ4X34j-wMNGsYkf1FeTCzEylU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

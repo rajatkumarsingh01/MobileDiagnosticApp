@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="@color/color4"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:textColor="@color/black"
+        android:background="@color/color5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Health Check"
+        android:elevation="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"/>
+
+    <!-- Camera Check Section -->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Camera Check:"
+        android:textSize="18sp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cameraCheckButton"
+        android:layout_width="200dp"
+        android:layout_marginTop="8dp"
+        app:cornerRadius="5dp"
+      android:backgroundTint="@color/color2"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Run Camera Check"/>
+
+    <!-- Microphone Check Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Microphone Check:"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/microphoneCheckButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="5dp"
+        android:backgroundTint="@color/color2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Run Microphone Check"/>
+
+    <!-- Bluetooth Check Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Check:"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bluetoothCheckButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="5dp"
+        android:backgroundTint="@color/color2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Run Bluetooth Check"/>
+
+    <!-- Gyroscope Check Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope_AccelerometerCheck:"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gyroscopeCheckButton"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/color2"
+        android:layout_height="wrap_content"
+        app:cornerRadius="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Run Gyro/Accelero Check"/>
+
+    <!-- Location (GPS) Check Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location (GPS) Check:"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gpsCheckButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="5dp"
+        android:backgroundTint="@color/color2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Run Location (GPS) Check"/>
+
+    <!-- Send to Firebase and Generate PDF Buttons -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendToFirebaseButton"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        app:cornerRadius="5dp"
+        android:layout_height="wrap_content"
+        android:text="Send Data to Firebase"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generatePDFButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="48dp"
+        android:text="Generate PDF Report"
+        app:cornerRadius="5dp" />
+</LinearLayout>
